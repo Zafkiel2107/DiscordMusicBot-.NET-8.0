@@ -14,7 +14,7 @@ namespace DiscordMusicBot.ServiceFolder
         }
         public Config GetConfiguration()
         {
-            var jsonPath = Path.GetFullPath("../../ConfigFolder/Config.json");
+            var jsonPath = Path.GetFullPath("../../../ConfigFolder/Config.json");
             Logger.LogInformation(new EventId(), null, "Запуск процедуры получения токена из json файла");
             try
             {
