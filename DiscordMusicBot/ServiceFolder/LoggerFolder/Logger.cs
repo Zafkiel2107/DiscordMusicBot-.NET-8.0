@@ -17,7 +17,7 @@ namespace DiscordMusicBot.ServiceFolder.LoggerFolder
 
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception? exception, Func<TState, Exception?, string> formatter)
         {
-            string logPath = Path.GetFullPath("../../ServiceFolder/LoggerFolder/log.txt");
+            string logPath = Path.GetFullPath("../../../ServiceFolder/LoggerFolder/log.txt");
             if (!File.Exists(logPath))
             {
                 FileStream f = File.Create(logPath);
